@@ -1,6 +1,6 @@
 {
 .appVersion = "1141";
-copyright = "Copyright (c) 2018 by Cadson Demak Co.,Ltd.. All rights reserved.";
+copyright = "Copyright (c) 2018, Cadson Demak (info@cadsondemak.com)";
 customParameters = (
 {
 name = vendorID;
@@ -130,6 +130,10 @@ value = -200;
 {
 name = underlineThickness;
 value = 20;
+},
+{
+name = "Master Icon Glyph Name";
+value = n;
 }
 );
 descender = -250;
@@ -196,6 +200,10 @@ value = -200;
 {
 name = underlineThickness;
 value = 20;
+},
+{
+name = "Master Icon Glyph Name";
+value = n;
 }
 );
 descender = -250;
@@ -261,6 +269,10 @@ value = -200;
 {
 name = underlineThickness;
 value = 20;
+},
+{
+name = "Master Icon Glyph Name";
+value = n;
 }
 );
 descender = -250;
@@ -330,6 +342,10 @@ value = -200;
 {
 name = underlineThickness;
 value = 20;
+},
+{
+name = "Master Icon Glyph Name";
+value = n;
 }
 );
 descender = -250;
@@ -399,6 +415,10 @@ value = -200;
 {
 name = underlineThickness;
 value = 20;
+},
+{
+name = "Master Icon Glyph Name";
+value = n;
 }
 );
 descender = -250;
@@ -467,6 +487,10 @@ value = -200;
 {
 name = underlineThickness;
 value = 20;
+},
+{
+name = "Master Icon Glyph Name";
+value = n;
 }
 );
 descender = -250;
@@ -60831,7 +60855,7 @@ unicode = 0069;
 {
 color = 9;
 glyphname = idotless;
-lastChange = "2018-04-23 15:38:10 +0000";
+lastChange = "2018-07-26 17:31:42 +0000";
 layers = (
 {
 anchors = (
@@ -60876,15 +60900,15 @@ width = 314;
 anchors = (
 {
 name = bottom;
-position = "{157, 0}";
+position = "{175, 0}";
 },
 {
 name = ogonek;
-position = "{170, 35}";
+position = "{188, 35}";
 },
 {
 name = top;
-position = "{157, 500}";
+position = "{175, 500}";
 }
 );
 layerId = "2F8C22CF-EC86-44F4-AF1A-A6C7F26A0C3C";
@@ -60892,24 +60916,24 @@ paths = (
 {
 closed = 1;
 nodes = (
-"196 2 OFFCURVE",
-"223 28 OFFCURVE",
-"223 61 CURVE SMOOTH",
-"235 446 LINE SMOOTH",
-"235 484 OFFCURVE",
-"204 508 OFFCURVE",
-"161 508 CURVE SMOOTH",
-"119 508 OFFCURVE",
-"88 484 OFFCURVE",
-"88 448 CURVE SMOOTH",
-"80 63 LINE SMOOTH",
-"80 26 OFFCURVE",
-"111 2 OFFCURVE",
-"153 2 CURVE SMOOTH"
+"214 2 OFFCURVE",
+"241 28 OFFCURVE",
+"241 61 CURVE SMOOTH",
+"253 446 LINE SMOOTH",
+"253 484 OFFCURVE",
+"222 508 OFFCURVE",
+"179 508 CURVE SMOOTH",
+"137 508 OFFCURVE",
+"106 484 OFFCURVE",
+"106 448 CURVE SMOOTH",
+"98 63 LINE SMOOTH",
+"98 26 OFFCURVE",
+"129 2 OFFCURVE",
+"171 2 CURVE SMOOTH"
 );
 }
 );
-width = 315;
+width = 350;
 },
 {
 anchors = (
@@ -61032,15 +61056,15 @@ width = 314;
 anchors = (
 {
 name = bottom;
-position = "{115, 0}";
+position = "{131, 0}";
 },
 {
 name = ogonek;
-position = "{134, 35}";
+position = "{150, 35}";
 },
 {
 name = top;
-position = "{203, 500}";
+position = "{219, 500}";
 }
 );
 layerId = "F86CB789-B416-49E2-AD1B-BE88A4A88FF7";
@@ -61048,24 +61072,24 @@ paths = (
 {
 closed = 1;
 nodes = (
-"154 2 OFFCURVE",
-"186 28 OFFCURVE",
-"192 61 CURVE SMOOTH",
-"272 446 LINE SMOOTH",
-"278 484 OFFCURVE",
-"252 508 OFFCURVE",
-"209 508 CURVE SMOOTH",
-"167 508 OFFCURVE",
-"131 484 OFFCURVE",
-"125 448 CURVE SMOOTH",
-"49 63 LINE SMOOTH",
-"43 26 OFFCURVE",
-"69 2 OFFCURVE",
-"111 2 CURVE SMOOTH"
+"170 2 OFFCURVE",
+"202 28 OFFCURVE",
+"208 61 CURVE SMOOTH",
+"288 446 LINE SMOOTH",
+"294 484 OFFCURVE",
+"268 508 OFFCURVE",
+"225 508 CURVE SMOOTH",
+"183 508 OFFCURVE",
+"147 484 OFFCURVE",
+"141 448 CURVE SMOOTH",
+"65 63 LINE SMOOTH",
+"59 26 OFFCURVE",
+"85 2 OFFCURVE",
+"127 2 CURVE SMOOTH"
 );
 }
 );
-width = 315;
+width = 350;
 }
 );
 note = dotlessi;
@@ -61944,7 +61968,7 @@ unicode = 012B;
 {
 color = 9;
 glyphname = iogonek;
-lastChange = "2018-04-23 15:39:19 +0000";
+lastChange = "2018-07-26 17:31:42 +0000";
 layers = (
 {
 components = (
@@ -61970,15 +61994,15 @@ name = idotless;
 },
 {
 name = dotaccentcomb;
-transform = "{1, 0, 0, 1, 158, 0}";
+transform = "{1, 0, 0, 1, 176, 0}";
 },
 {
 name = ogonekcomb;
-transform = "{1, 0, 0, 1, 142, 35}";
+transform = "{1, 0, 0, 1, 160, 35}";
 }
 );
 layerId = "2F8C22CF-EC86-44F4-AF1A-A6C7F26A0C3C";
-width = 315;
+width = 350;
 },
 {
 components = (
@@ -62038,15 +62062,15 @@ name = idotless;
 },
 {
 name = dotaccentcomb;
-transform = "{1, 0, 0, 1, 158, 0}";
+transform = "{1, 0, 0, 1, 174, 0}";
 },
 {
 name = ogonekcomb;
-transform = "{1, 0, 0, 1, 148, 35}";
+transform = "{1, 0, 0, 1, 164, 35}";
 }
 );
 layerId = "F86CB789-B416-49E2-AD1B-BE88A4A88FF7";
-width = 315;
+width = 350;
 }
 );
 note = iogonek;
