@@ -1,9 +1,5 @@
 {
 .appVersion = "1342";
-DisplayStrings = (
-"/saraAm-thai",
-"/thanthakhat-thai.narrow"
-);
 copyright = "Copyright 2018 The Mali Project Authors (https://github.com/cadsondemak/Mali)";
 customParameters = (
 {
