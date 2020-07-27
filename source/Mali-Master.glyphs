@@ -1,5 +1,9 @@
 {
-.appVersion = "1161";
+.appVersion = "1342";
+DisplayStrings = (
+"/saraAm-thai",
+"/thanthakhat-thai.narrow"
+);
 copyright = "Copyright 2018 The Mali Project Authors (https://github.com/cadsondemak/Mali)";
 customParameters = (
 {
@@ -32,7 +36,7 @@ name = "Use Line Breaks";
 value = 1;
 }
 );
-date = "2018-08-04 09:05:17 +0000";
+date = "2020-07-27 15:52:04 +0000";
 designer = "Kitiyaporn Chalermlarp | Katatrad Aksorn Co.,Ltd.";
 designerURL = "http://www.katatrad.com";
 familyName = Mali;
@@ -123669,16 +123673,6 @@ unicode = 0E32;
 glyphname = "saraAm-thai";
 layers = (
 {
-anchors = (
-{
-name = bottom;
-position = "{374, 0}";
-},
-{
-name = top;
-position = "{375, 851}";
-}
-);
 layerId = "0B1DFD06-3317-40CA-B510-4969A0718C16";
 paths = (
 {
@@ -123754,16 +123748,6 @@ nodes = (
 width = 488;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{449, 0}";
-},
-{
-name = top;
-position = "{449, 590}";
-}
-);
 layerId = "2F8C22CF-EC86-44F4-AF1A-A6C7F26A0C3C";
 paths = (
 {
@@ -123839,16 +123823,6 @@ nodes = (
 width = 515;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{404, 0}";
-},
-{
-name = top;
-position = "{405, 747}";
-}
-);
 layerId = "17B9D149-A542-49FB-8130-D430586D7342";
 paths = (
 {
@@ -123924,16 +123898,6 @@ nodes = (
 width = 499;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{332, 0}";
-},
-{
-name = top;
-position = "{483, 851}";
-}
-);
 layerId = "2214C8E2-2079-4DC2-8649-1937C1DD8804";
 paths = (
 {
@@ -124015,16 +123979,6 @@ nodes = (
 width = 488;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{362, 0}";
-},
-{
-name = top;
-position = "{495, 747}";
-}
-);
 layerId = "AEE50E4E-1B30-4E16-A434-AC23B12A4294";
 paths = (
 {
@@ -124106,16 +124060,6 @@ nodes = (
 width = 499;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{407, 0}";
-},
-{
-name = top;
-position = "{511, 590}";
-}
-);
 layerId = "F86CB789-B416-49E2-AD1B-BE88A4A88FF7";
 paths = (
 {
