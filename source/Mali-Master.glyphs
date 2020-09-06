@@ -25,14 +25,14 @@ value = 1;
 },
 {
 name = "Disable Last Change";
-value = 1;
+value = 0;
 },
 {
 name = "Use Line Breaks";
 value = 1;
 }
 );
-date = "2020-07-27 15:52:04 +0000";
+date = "2020-09-06 08:37:06 +0000";
 designer = "Kitiyaporn Chalermlarp | Katatrad Aksorn Co.,Ltd.";
 designerURL = "http://www.katatrad.com";
 familyName = Mali;
@@ -40,11 +40,13 @@ featurePrefixes = (
 {
 automatic = 1;
 code = "languagesystem DFLT dflt;
+
 languagesystem latn dflt;
-languagesystem thai dflt;
 languagesystem latn ROM;
 languagesystem latn MOL;
 languagesystem latn CAT;
+
+languagesystem thai dflt;
 ";
 name = Languagesystems;
 }
@@ -52,12 +54,12 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature ccmp;
-feature locl;
+code = "feature locl;
 feature subs;
 feature sups;
 feature frac;
 feature ordn;
+feature sinf;
 ";
 name = aalt;
 },
@@ -113,20 +115,22 @@ name = ccmp;
 },
 {
 automatic = 1;
-code = "script latn;
-language ROM;
-sub Scedilla by Scommaaccent;
-sub scedilla by scommaaccent;
-sub Tcedilla by Tcommaaccent;
-sub tcedilla by tcommaaccent;
-language MOL;
-sub Scedilla by Scommaaccent;
-sub scedilla by scommaaccent;
-sub Tcedilla by Tcommaaccent;
-sub tcedilla by tcommaaccent;
-language CAT;
-sub  l' periodcentered' l by ldot;
-sub  L' periodcentered' L by Ldot;
+code = "lookup locl_latn_0 {
+	script latn;
+	language ROM;
+	language MOL;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language CAT;
+	sub  l' periodcentered' l by ldot;
+	sub  L' periodcentered' L by Ldot;
+} locl_latn_1;
 ";
 name = locl;
 },
@@ -146,6 +150,23 @@ sub parenleft by parenleftinferior;
 sub parenright by parenrightinferior;
 ";
 name = subs;
+},
+{
+automatic = 1;
+code = "sub zero by zeroinferior;
+sub one by oneinferior;
+sub two by twoinferior;
+sub three by threeinferior;
+sub four by fourinferior;
+sub five by fiveinferior;
+sub six by sixinferior;
+sub seven by seveninferior;
+sub eight by eightinferior;
+sub nine by nineinferior;
+sub parenleft by parenleftinferior;
+sub parenright by parenrightinferior;
+";
+name = sinf;
 },
 {
 automatic = 1;
@@ -187,8 +208,20 @@ name = ordn;
 },
 {
 automatic = 1;
-code = "sub lu-thai lakkhangyao-thai by lu_lakkhangyao-thai;
-sub ru-thai lakkhangyao-thai by ru_lakkhangyao-thai;
+code = "lookup rlig_thai_0 {
+	lookupflag IgnoreMarks;
+	sub lu-thai lakkhangyao-thai by lu_lakkhangyao-thai;
+	sub ru-thai lakkhangyao-thai by ru_lakkhangyao-thai;
+} rlig_thai_0;
+
+script thai;
+lookup rlig_thai_0;
+";
+name = rlig;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
 sub f i by fi;
 sub f l by fl;
 ";
@@ -212,11 +245,11 @@ capHeight = 700;
 customParameters = (
 {
 name = typoAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = typoDescender;
-value = -250;
+value = -439;
 },
 {
 name = typoLineGap;
@@ -236,11 +269,11 @@ value = n;
 },
 {
 name = hheaAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -439;
 },
 {
 name = hheaLineGap;
@@ -274,11 +307,11 @@ capHeight = 700;
 customParameters = (
 {
 name = typoAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = typoDescender;
-value = -250;
+value = -439;
 },
 {
 name = typoLineGap;
@@ -298,11 +331,11 @@ value = n;
 },
 {
 name = hheaAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -439;
 },
 {
 name = hheaLineGap;
@@ -335,11 +368,11 @@ capHeight = 700;
 customParameters = (
 {
 name = typoAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = typoDescender;
-value = -250;
+value = -439;
 },
 {
 name = typoLineGap;
@@ -359,11 +392,11 @@ value = n;
 },
 {
 name = hheaAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -439;
 },
 {
 name = hheaLineGap;
@@ -400,11 +433,11 @@ customValue = 1;
 customParameters = (
 {
 name = typoAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = typoDescender;
-value = -250;
+value = -439;
 },
 {
 name = typoLineGap;
@@ -424,11 +457,11 @@ value = n;
 },
 {
 name = hheaAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -439;
 },
 {
 name = hheaLineGap;
@@ -465,11 +498,11 @@ customValue = 1;
 customParameters = (
 {
 name = typoAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = typoDescender;
-value = -250;
+value = -439;
 },
 {
 name = typoLineGap;
@@ -489,11 +522,11 @@ value = n;
 },
 {
 name = hheaAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -439;
 },
 {
 name = hheaLineGap;
@@ -529,11 +562,11 @@ customValue = 1;
 customParameters = (
 {
 name = typoAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = typoDescender;
-value = -250;
+value = -439;
 },
 {
 name = typoLineGap;
@@ -553,11 +586,11 @@ value = n;
 },
 {
 name = hheaAscender;
-value = 1050;
+value = 1523;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -439;
 },
 {
 name = hheaLineGap;
@@ -123338,16 +123371,6 @@ unicode = 0E30;
 glyphname = "saraAa-thai";
 layers = (
 {
-anchors = (
-{
-name = bottom;
-position = "{374, 0}";
-},
-{
-name = top;
-position = "{375, 584}";
-}
-);
 layerId = "0B1DFD06-3317-40CA-B510-4969A0718C16";
 paths = (
 {
@@ -123389,16 +123412,6 @@ nodes = (
 width = 488;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{448, 0}";
-},
-{
-name = top;
-position = "{448, 590}";
-}
-);
 layerId = "2F8C22CF-EC86-44F4-AF1A-A6C7F26A0C3C";
 paths = (
 {
@@ -123440,16 +123453,6 @@ nodes = (
 width = 514;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{404, 0}";
-},
-{
-name = top;
-position = "{404, 586}";
-}
-);
 layerId = "17B9D149-A542-49FB-8130-D430586D7342";
 paths = (
 {
@@ -123491,16 +123494,6 @@ nodes = (
 width = 498;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{332, 0}";
-},
-{
-name = top;
-position = "{436, 584}";
-}
-);
 layerId = "2214C8E2-2079-4DC2-8649-1937C1DD8804";
 paths = (
 {
@@ -123548,16 +123541,6 @@ nodes = (
 width = 488;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{362, 0}";
-},
-{
-name = top;
-position = "{465, 586}";
-}
-);
 layerId = "AEE50E4E-1B30-4E16-A434-AC23B12A4294";
 paths = (
 {
@@ -123605,16 +123588,6 @@ nodes = (
 width = 498;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{406, 0}";
-},
-{
-name = top;
-position = "{510, 590}";
-}
-);
 layerId = "F86CB789-B416-49E2-AD1B-BE88A4A88FF7";
 paths = (
 {
@@ -126651,16 +126624,6 @@ unicode = 0E44;
 glyphname = "lakkhangyao-thai";
 layers = (
 {
-anchors = (
-{
-name = bottom;
-position = "{373, -272}";
-},
-{
-name = top;
-position = "{375, 584}";
-}
-);
 layerId = "0B1DFD06-3317-40CA-B510-4969A0718C16";
 paths = (
 {
@@ -126702,16 +126665,6 @@ nodes = (
 width = 488;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{457, -272}";
-},
-{
-name = top;
-position = "{457, 590}";
-}
-);
 layerId = "2F8C22CF-EC86-44F4-AF1A-A6C7F26A0C3C";
 paths = (
 {
@@ -126753,16 +126706,6 @@ nodes = (
 width = 523;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{406, -268}";
-},
-{
-name = top;
-position = "{408, 586}";
-}
-);
 layerId = "17B9D149-A542-49FB-8130-D430586D7342";
 paths = (
 {
@@ -126804,16 +126747,6 @@ nodes = (
 width = 502;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{285, -270}";
-},
-{
-name = top;
-position = "{436, 584}";
-}
-);
 layerId = "2214C8E2-2079-4DC2-8649-1937C1DD8804";
 paths = (
 {
@@ -126861,16 +126794,6 @@ nodes = (
 width = 488;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{317, -264}";
-},
-{
-name = top;
-position = "{469, 586}";
-}
-);
 layerId = "AEE50E4E-1B30-4E16-A434-AC23B12A4294";
 paths = (
 {
@@ -126918,16 +126841,6 @@ nodes = (
 width = 502;
 },
 {
-anchors = (
-{
-name = bottom;
-position = "{367, -272}";
-},
-{
-name = top;
-position = "{519, 590}";
-}
-);
 layerId = "F86CB789-B416-49E2-AD1B-BE88A4A88FF7";
 paths = (
 {
@@ -242653,5 +242566,5 @@ userData = {
 GSDontShowVersionAlert = 1;
 };
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 10;
 }
